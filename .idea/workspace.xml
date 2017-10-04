@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6cd5c38-76d5-47b6-951a-48d44a692ef2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/web/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/controllers/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/web/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vagrantfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/Module.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/controllers/DefaultController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/modules/v1/Module.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/modules/v1/controllers/CountryController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/DELETE-tallerphpyiiadvanced-api-v1-countries.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/GET-tallerphpyiiadvanced-api-v1-countries.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/POST-tallerphpyiiadvanced-api-v1-countries.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/PUT-tallerphpyiiadvanced-api-v1-countries.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/api_data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/api_data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/api_project.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/api_project.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/locales/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/locales/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/locales/locale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/locales/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/locales/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/locales/pt_br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/locales/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/locales/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/utils/handlebars_helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/utils/send_sample_request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/diff_match_patch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/handlebars.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/lodash.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/path-to-regexp/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/path-to-regexp/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/polyfill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-apollo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-clj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-go.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-hs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-llvm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-mumps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-n.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-proto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-rd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-vb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-wiki.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-xq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/lang-yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/prettify/run_prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/runtime/documentation/doc/vendor/require.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/views/default/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/assets/AppAsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/components/AmazonS3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/config/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/config/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/controllers/CountryController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/controllers/SiteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/models/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/runtime/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/_data/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/_data/login_data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/_output/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/_support/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/_support/FunctionalTester.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/_support/UnitTester.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/functional.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/functional/LoginCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/functional/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/unit.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/tests/unit/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/country/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/country/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/country/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/country/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/country/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/country/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/layouts/content.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/layouts/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/layouts/left.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/layouts/main-login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/site/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/site/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/site/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/web/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/web/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/web/assets/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/web/css/site.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/config/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/config/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/fixtures/UserFixture.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/mail/layouts/html.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/mail/layouts/text.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/mail/passwordResetToken-html.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/mail/passwordResetToken-text.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/models/Country.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/models/CountrySearch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/models/LoginForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/models/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/_data/user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/_output/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/_support/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/_support/UnitTester.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/unit.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/unit/models/LoginFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/widgets/Alert.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/config/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/controllers/RbacController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/migrations/m130524_201442_init.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/migrations/m170829_212703_countries_creation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/models/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/runtime/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/backend/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/backend/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/backend/config/test-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/backend/web/index-test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/backend/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/backend/web/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/common/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/common/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/common/config/test-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/console/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/console/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/frontend/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/frontend/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/frontend/config/test-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/frontend/web/index-test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/frontend/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/frontend/web/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/yii_test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/dev/yii_test.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/backend/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/backend/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/backend/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/backend/web/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/common/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/common/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/console/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/console/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/frontend/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/frontend/config/params-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/frontend/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/frontend/web/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/environments/prod/yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/assets/AppAsset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/config/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/config/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/models/ContactForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/models/ResetPasswordForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/models/SignupForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/runtime/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/_data/login_data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/_data/user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/_output/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/_support/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/_support/FunctionalTester.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/_support/UnitTester.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/acceptance.suite.yml.example" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/acceptance/HomeCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/acceptance/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/AboutCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/ContactCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/HomeCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/LoginCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/SignupCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/unit.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/unit/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/unit/models/ContactFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/unit/models/PasswordResetRequestFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/unit/models/ResetPasswordFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/unit/models/SignupFormTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/about.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/requestPasswordResetToken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/resetPassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/signup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/web/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/web/assets/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/web/css/site.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/config/vagrant-local.example.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/nginx/app.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/nginx/log/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/provision/always-as-root.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/provision/once-as-root.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vagrant/provision/once-as-vagrant.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yii.bat" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main-local.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/environments/prod/common/config/main-local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main-local.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/environments/dev/common/config/main-local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main-local.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/db/Connection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2091">
+              <caret line="132" column="34" lean-forward="false" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".bowerrc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.bowerrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/site/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_bootstrap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/tests/_bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssetManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/AssetManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7446">
+              <caret line="447" column="0" lean-forward="false" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/init">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/web/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JqueryAsset.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/JqueryAsset.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/base/Application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7650">
+              <caret line="454" column="25" lean-forward="false" selection-start-line="454" selection-start-column="25" selection-end-line="454" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JqueryAsset.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/web/JqueryAsset.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basic.php" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2448">
+              <caret line="144" column="9" lean-forward="false" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vagrantfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vagrantfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>db</find>
+      <find>vendor\bower/jquery/dis</find>
+      <find>vendor</find>
+      <find>ssetManager.php</find>
+      <find>publish</find>
+      <find>str_replace(</find>
+      <find>bower</find>
+      <find>yii2advanced</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\wamp64\www\tallerphpyiiadvandced</dir>
+      <dir>C:\wamp64\www\tallerphpyiiadvandced\backend</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/tests/_bootstrap.php" />
+        <option value="$PROJECT_DIR$/init" />
+        <option value="$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/base/Application.php" />
+        <option value="$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/web/JqueryAsset.php" />
+        <option value="$PROJECT_DIR$/vendor/yiisoft/yii2/web/JqueryAsset.php" />
+        <option value="$PROJECT_DIR$/.bowerrc" />
+        <option value="$PROJECT_DIR$/environments/dev/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/environments/prod/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/common/config/main-local.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/vendor/bower/jquery.inputmask/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vendor/bower/punycode/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1378" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tallerphpyiiadvandced" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tallerphpyiiadvandced" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tallerphpyiiadvandced" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tallerphpyiiadvandced" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tallerphpyiiadvandced" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tallerphpyiiadvandced" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tallerphpyiiadvandced" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tallerphpyiiadvandced" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="SearchEverywhereHistoryKey" value="Connection&#9;null&#9;null&#10;ssetManager.php&#9;FILE&#9;file://C:/wamp64/www/tallerphpyiiadvandced/vendor/yiisoft/yii2/web/AssetManager.php" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6cd5c38-76d5-47b6-951a-48d44a692ef2" name="Default" comment="" />
+      <created>1506561719643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1506561719643</updated>
+      <workItem from="1506561721648" duration="1001000" />
+      <workItem from="1506901593501" duration="1293000" />
+      <workItem from="1507073880990" duration="593000" />
+      <workItem from="1507075116202" duration="4659000" />
+      <workItem from="1507080445477" duration="406000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7952000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27818447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16559486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/environments/prod/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/dev/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/db/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/_bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/AssetManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7599">
+          <caret line="447" column="0" lean-forward="false" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/JqueryAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/base/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7718">
+          <caret line="454" column="25" lean-forward="false" selection-start-line="454" selection-start-column="25" selection-end-line="454" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/web/JqueryAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="9" lean-forward="false" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/prod/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/dev/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/prod/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/dev/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/prod/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/dev/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/_bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/AssetManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7446">
+          <caret line="447" column="0" lean-forward="false" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="9" lean-forward="false" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/JqueryAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/web/JqueryAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/base/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7650">
+          <caret line="454" column="25" lean-forward="false" selection-start-line="454" selection-start-column="25" selection-end-line="454" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/eold/yii2-apidoc-generator/vendor/yiisoft/yii2/db/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2091">
+          <caret line="132" column="34" lean-forward="false" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/codeception.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/dev/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environments/prod/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
