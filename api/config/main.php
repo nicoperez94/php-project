@@ -29,27 +29,27 @@ return [
             'format' => yii\web\Response::FORMAT_JSON,
             'charset' => 'UTF-8',
 
-            'on beforeSend' => function ($event) {
-              if ($response->data !== null) {
-                  $response->data = [
-                      'success' => $response->isSuccessful,
-                      'code' => $response->statusCode,
-                      'status' => $response->statusText,
-                      'data' => $response->data,
-                  ];
-                  // $response->statusCode = 200;
-              }
-            },
-            'on afterSend' => function ($event) {
-                $response = $event->sender;
-                if ($response->data !== null) {
-                    if(Yii::$app->docGenerator->isActive){
-                        $apiDocGenerator = new eold\apidocgen\src\ApiDocGenerator;
-                        $apiDocGenerator->init();
-                        // $apiDocGenerator->generateDocs($event);
-                    }
-                }
-            },
+//            'on beforeSend' => function ($event) {
+//              if ($response->data !== null) {
+//                  $response->data = [
+//                      'success' => $response->isSuccessful,
+//                      'code' => $response->statusCode,
+//                      'status' => $response->statusText,
+//                      'data' => $response->data,
+//                  ];
+//                  // $response->statusCode = 200;
+//              }
+//            },
+//            'on afterSend' => function ($event) {
+//                $response = $event->sender;
+//                if ($response->data !== null) {
+//                    if(Yii::$app->docGenerator->isActive){
+//                        $apiDocGenerator = new eold\apidocgen\src\ApiDocGenerator;
+//                        $apiDocGenerator->init();
+//                        // $apiDocGenerator->generateDocs($event);
+//                    }
+//                }
+//            },
         ],
        
         'request' => [

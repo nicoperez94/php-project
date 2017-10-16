@@ -23,12 +23,22 @@ class CountryController extends Controller
         return [
           'access' => [
             'class' => AccessControl::className(),
-            'only' => ['create', 'update', 'delete'],
+            'only' => ['create', 'update', 'delete', 'index', 'view'],
             'rules' => [
                 [
-                    'actions' => ['create', 'update', 'delete'],
+                    'actions' => ['index', 'view'],
                     'allow' => true,
                     'roles' => ['@'],
+                ],
+                [
+                    'actions' => ['create', 'delete'],
+                    'allow' => true,
+                    'roles' => ['admin'],
+                ],
+                [
+                    'actions' => ['update'],
+                    'allow' => true,
+                    'roles' => ['author'],
                 ],
             ],
         ],
@@ -102,8 +112,8 @@ class CountryController extends Controller
 
         // HIDDEN UPLOAD TO FILE - HERE
         // TODO -> MOVE ME TO ANOTHER PLACE
-        $fileToUpload = '/Users/sandino/Documents/www/tallerphpyiiadvanced/frontend/web/favicon.ico';        
-        $result = Yii::$app->AmazonS3->uploadImage($fileToUpload);
+//        $fileToUpload = '/Users/sandino/Documents/www/tallerphpyiiadvanced/frontend/web/favicon.ico';
+//        $result = Yii::$app->AmazonS3->uploadImage($fileToUpload);
         // TODO -> MOVE ME TO ANOTHER PLACE
 
         if ($model->load(Yii::$app->request->post())) {

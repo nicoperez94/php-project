@@ -67,9 +67,11 @@ class SignupForm extends Model
         }
       } catch (\Exception $e) {
           $transaction->rollBack();
+          $this->addError('username', 'Ocurrio un error al asignar el rol');
           return null;
       } catch (\Throwable $e) {
           $transaction->rollBack();
+          $this->addError('username', 'Ocurrio un error al asignar el rol');
           return null;
       }
       
