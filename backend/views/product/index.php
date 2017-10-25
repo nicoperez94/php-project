@@ -14,9 +14,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
+    
     <p>
-        <?= Html::a('Create Product', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Crear Producto', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -33,14 +33,21 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format' => 'raw',
                 'value' => function($model){
                     $generator = new common\helpers\barcode\BarcodeGeneratorHTML();
-                    return $generator->getBarcode($model->id * 999, $generator::TYPE_CODE_128);
+                    if(isset($model->bar_code) &&  ($model->bar_code != 0 || $model->bar_code == null)){
+                        return $generator->getBarcode($model->bar_code, $generator::TYPE_CODE_128);
+                    }else{
+                        //Se le setea el valor del codigo de barras.
+                        $model->bar_code = 1000 + $model->id;
+                        $model->save();
+                        return $generator->getBarcode($model->bar_code, $generator::TYPE_CODE_128);
+                    }
                 }
             ],
             [
                 'attribute' => 'Imagen',
                 'format' => 'raw',
                 'value' => function($model) {
-                    return Html::img($model->image, ['width' => 50]);
+                    return Html::img(Yii::$app->basePath . '\uploads\products\\' . $model->image, ['width' => 50]);
                 },
             ],
 

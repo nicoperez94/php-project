@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Country */
+/* @var $model common\models\Product */
 
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Productos', 'url' => ['index']];
@@ -31,9 +31,24 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'price',
-            'bar_code',
+            [
+                'attribute' => 'bar_code',
+                'format' => 'raw',
+                'value' => function($model){
+                    $generator = new common\helpers\barcode\BarcodeGeneratorHTML();
+                    if(isset($model->bar_code)){
+                        return $generator->getBarcode($model->bar_code, $generator::TYPE_CODE_128);
+                    }
+                }
+            ],
             'stock',
-            'image'
+            [
+                'attribute' => 'Imagen',
+                'format' => 'raw',
+                'value' => function($model) {
+                    return Html::img($model->image, ['width' => 50]);
+                },
+            ]
         ],
     ]) ?>
 

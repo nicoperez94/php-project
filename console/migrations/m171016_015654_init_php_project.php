@@ -12,52 +12,48 @@ class m171016_015654_init_php_project extends Migration
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
         }
 
-//        echo '----------------------------------------------------\n';
-//        echo '                  Starting Migration                \n';
-//        echo '----------------------------------------------------\n';
-//        echo '\n';
-//        echo '1- Creating tables\n';
         $this->createTable("{{%product}}", [
             "id"    =>  $this->primaryKey(),
             "name"    =>  $this->string()->notNull(),
             "price"  => $this->float()->notNull(),
             "image" =>  $this->string(),
             "bar_code"   =>  $this->text(),
-            "stock" =>  $this->integer()
+            "stock" =>  $this->integer(),
+            "store_id" => $this->integer(11)
         ], $tableOptions);
-
-//        echo '  Product\n';
 
         $this->createTable("{{%category}}", [
             "id"    =>  $this->primaryKey(),
             "name"  =>  $this->string()->notNull(),
-            "product_id"    =>  $this->integer(11)
-        ]);
+        ], $tableOptions);
 
-//        echo '  Category\n';
+        $this->createTable("{{%category_product}}",[
+            "product_id" => $this->integer(11),
+            "category_id" => $this->integer(11)
+        ], $tableOptions);
 
         $this->createTable("{{%order_product}}",[
             "id"    =>  $this->primaryKey(),
+            "quantity"  =>  $this->integer(),
             "product_id"    =>  $this->integer(11)->notNull(),
-            "quantity"  =>  $this->integer()
-        ]);
-
-//        echo '  Order_Product\n';
+            "order_id" => $this->integer(11)
+        ], $tableOptions);
 
         $this->createTable("{{%order}}",[
             "id"    =>$this->primaryKey(),
             "state" =>$this->string(50)->notNull(),
             "shipping_place"    =>  $this->text(),
             "price" =>$this->float()->notNull(),
-            "order_product_id"  =>  $this->integer(11)->notNull()
-        ]);
-
-//        echo '  Order\n';
+            "user_id" => $this->integer(11),
+            "shipping_id" => $this->integer(11),
+            "store_id" => $this->integer(11)
+        ], $tableOptions);
 
         $this->createTable("{{%delivery}}",[
             "id"    =>  $this->primaryKey(),
-            "name"  =>  $this->string(50)->notNull()
-        ]);
+            "name"  =>  $this->string(50)->notNull(),
+            "store_id" =>$this->integer(11)
+        ], $tableOptions);
 
 //        echo '  Delivery\n';
 
@@ -68,68 +64,171 @@ class m171016_015654_init_php_project extends Migration
             "state" =>  $this->string(50)->notNull(),
             "price" =>  $this->float()->notNull(),
             "delivery_id"   =>  $this->integer(11),
-            "order_id"  =>  $this->integer(11)
-        ]);
-
-//        echo '  Shipping\n';
+            "store_id" => $this->integer(11)
+        ], $tableOptions);
 
         $this->createTable("{{%store}}",[
             "id"    =>  $this->primaryKey(),
             "name"  =>  $this->string(50),
             "location"  =>  $this->text(),
-            "category_id"   =>  $this->integer(11),
-            "product_id"    =>  $this->integer(11),
-            "order_id"  =>  $this->integer(11),
-            "delivery_id"   =>  $this->integer(11),
-            "shipping_id"   =>  $this->integer(11)
-        ]);
+        ], $tableOptions);
 
-//        echo '  Store\n';
-//        echo '\n';
-//        echo '2- Indexing and Creating Foreign Keys\n';
         $this->createIndex(
-            "idx-category-product_id",
-            "{{%category}}",
-            "product_id"
+            "idx-product-store_id",
+            "{{%product}}",
+            "store_id"
         );
 
         $this->addForeignKey(
-            "fk-category-product_id",
-            "{{%category}}",
+            "fk-product-store_id",
+            "{{%product}}",
+            "store_id",
+            "{{%store}}",
+            "id",
+            "CASCADE"
+        );
+
+        $this->createIndex(
+            "idx-category_product-product_id",
+            "{{%category_product}}",
+            "product_id"
+        );
+
+        $this->createIndex(
+            "idx-category_product-category_id",
+            "{{%category_product}}",
+            "category_id"
+        );
+
+        $this->addForeignKey(
+            "fk-category_product-product_id",
+            "{{%category_product}}",
             "product_id",
             "{{%product}}",
             "id",
             "CASCADE"
         );
 
-//        echo '  category-product_id\n';
+        $this->addForeignKey(
+            "fk-category_product-category_id",
+            "{{%category_product}}",
+            "category_id",
+            "{{%category}}",
+            "id",
+            "CASCADE"
+        );
 
+        $this->createIndex(
+            "idx-order_product-product_id",
+            "{{%order_product}}",
+            "product_id"
+        );
 
-        $this->createIndex("idx-order_product-product_id", "{{%order_product}}","product_id");
+        $this->createIndex(
+            "idx-order_product-order_id",
+            "{{%order_product}}",
+            "order_id"
+        );
+
+        $this->addForeignKey(
+            "fk-order_product-order_id",
+            "{{%order_product}}",
+            "order_id",
+            "{{%order}}",
+            "id",
+            "CASCADE"
+        );
+
         $this->addForeignKey(
             "fk-order_product-product_id",
             "{{%order_product}}",
-        "product_id",
+            "product_id",
             "{{%product}}",
             "id",
             "CASCADE"
         );
 
-//        echo '  order_product-product_id\n';
-
-        $this->createIndex("idx-order-order_product_id","{{%order}}","order_product_id");
-        $this->addForeignKey(
-            "fk-order-order_product_id",
+        $this->createIndex(
+            "idx-order-user_id",
             "{{%order}}",
-            "order_product_id",
-            "{{%order_product}}",
+            "user_id"
+        );
+
+        $this->createIndex(
+            "idx-order-shipping_id",
+            "{{%order}}",
+            "shipping_id"
+        );
+
+        $this->createIndex(
+            "idx-order-store_id",
+            "{{%order}}",
+            "store_id"
+        );
+
+        $this->addForeignKey(
+            "fk-order-user_id",
+            "{{%order}}",
+            "user_id",
+            "{{%user}}",
             "id",
             "CASCADE"
         );
 
-//        echo '  order-order_product_id\n';
+        $this->addForeignKey(
+            "fk-order-shipping_id",
+            "{{%order}}",
+            "shipping_id",
+            "{{%shipping}}",
+            "id",
+            "CASCADE"
+        );
 
-        $this->createIndex("idx-shipping-delivery_id","{{%shipping}}","delivery_id");
+        $this->addForeignKey(
+            "fk-order-store_id",
+            "{{%order}}",
+            "store_id",
+            "{{%store}}",
+            "id",
+            "CASCADE"
+        );
+
+        $this->createIndex(
+            "idx-delivery-store_id",
+            "{{%delivery}}",
+            "store_id"
+        );
+
+        $this->addForeignKey(
+            "fk-delivery-store_id",
+            "{{%delivery}}",
+            "store_id",
+            "{{%store}}",
+            "id",
+            "CASCADE"
+        );
+
+        $this->createIndex(
+            "idx-shipping-store_id",
+            "{{%shipping}}",
+            "store_id"
+        );
+
+        $this->createIndex(
+            "idx-shipping-delivery_id",
+            "{{%shipping}}",
+            "delivery_id"
+        );
+
+        $this->addForeignKey(
+            "fk-shipping-store_id",
+            "{{%shipping}}",
+            "store_id",
+            "{{%store}}",
+            "id",
+            "CASCADE"
+        );
+
         $this->addForeignKey(
             "fk-shipping-delivery_id",
             "{{%shipping}}",
@@ -139,77 +238,9 @@ class m171016_015654_init_php_project extends Migration
             "CASCADE"
         );
 
-//        echo '  shipping-delivery_id\n';
+        ////////////////////////////////////////////////////////
 
-        $this->createIndex("idx-shipping-order_id","{{%shipping}}","order_id");
-        $this->addForeignKey(
-            "fk-shipping-order_id",
-            "{{%shipping}}",
-            "order_id",
-            "{{%order}}",
-            "id",
-            "CASCADE"
-        );
 
-//        echo '  shipping-order_id\n';
-
-        $this->createIndex("idx-store-category_id", "{{%store}}", "category_id");
-        $this->addForeignKey(
-            "fk-store-category_id",
-            "{{%store}}",
-            "category_id",
-            "{{%category}}",
-            "id",
-            "CASCADE"
-        );
-
-//        echo '  store-order_id\n';
-
-        $this->createIndex("idx-store-product_id", "{{%store}}","product_id");
-        $this->addForeignKey(
-            "fk-store-product_id",
-            "{{%store}}",
-            "product_id",
-            "{{%product}}",
-            "id",
-            "CASCADE"
-        );
-
-//        echo '  store-product_id\n';
-
-        $this->createIndex("idx-store-order_id", "{{%store}}","order_id");
-        $this->addForeignKey(
-            "fk-store-order_id",
-            "{{%store}}",
-            "order_id",
-            "{{%order}}",
-            "id",
-            "CASCADE"
-        );
-
-//        echo '  store-order_id\n';
-
-        $this->createIndex("idx-store-delivery_id", "{{%store}}","delivery_id");
-        $this->addForeignKey(
-            "fk-store-delivery_id",
-            "{{%store}}",
-            "delivery_id",
-            "{{%delivery}}",
-            "id",
-            "CASCADE"
-        );
-
-//        echo '  store-delivery_id\n';
-
-        $this->createIndex("idx-store-shipping_id", "{{%store}}", "shipping_id");
-        $this->addForeignKey(
-            "fk-store-shipping_id",
-            "{{%store}}",
-            "shipping_id",
-            "{{%shipping}}",
-            "id",
-            "CASCADE"
-        );
 
 //        echo '  store-shipping_id\n';
 //
@@ -252,35 +283,30 @@ class m171016_015654_init_php_project extends Migration
     {
         //echo "m171016_015654_init_php_project cannot be reverted.\n";
 
-//        echo '----------------------------------------------------\n';
-//        echo '              Starting Migration/down               \n';
-//        echo '----------------------------------------------------\n';
-//        echo '\n';
-//        echo '1- Dropping index and foreign keys';
-//        $this->dropForeignKey("fk-user-order_id","{{%user}}");
-//        $this->dropIndex("idx-user-order_id","{{%user");
-//        $this->dropForeignKey("fk-user-store_id", "{{%user}}");
-//        $this->dropIndex("idx-user-store_id","{{%user}}");
-        $this->dropForeignKey("fk-store-order_id","{{%store}}");
-        $this->dropIndex("idx-store-order_id", "{{%store}}");
-        $this->dropForeignKey("fk-store-product_id","{{%store}}");
-        $this->dropIndex("idx-store-product_id", "{{%store}}");
-        $this->dropForeignKey("fk-store-category_id","{{%store}}");
-        $this->dropIndex("idx-store-category_id","{{%store}}");
-        $this->dropForeignKey("fk-store-delivery_id","{{%store}}");
-        $this->dropIndex("idx-store-delivery_id","{{%store}}");
-        $this->dropForeignKey("fk-store-shipping_id","{{%store}}");
-        $this->dropIndex("idx-store-shipping_id","{{%store}}");
+        $this->dropForeignKey("fk-product-store_id","{{%product}}");
+//        $this->dropIndex("idx-product-store_id","{{%product}}");
+        $this->dropForeignKey("fk-category_product-product_id", "{{%category_product}}");
+//        $this->dropIndex("idx-category_product-product_id","{{%category_product}}");
+        $this->dropForeignKey("fk-category_product-category_id","{{%category_product}}");
+//        $this->dropIndex("idx-category_product-category_id","{{%category_product}}");
+        $this->dropForeignKey("fk-order_product-product_id","{{%order_product}}");
+//        $this->dropIndex("idx-order_product-product_id","{{%order_product}}");
+        $this->dropForeignKey("fk-order_product-order_id","{{%order_product}}");
+//        $this->dropIndex("idx-order_product-order_id","{{%order_product}}");
+        $this->dropForeignKey("fk-order-user_id","{{%order}}");
+//        $this->dropIndex("idx-order-user_id","{{%order}}");
+        $this->dropForeignKey("fk-order-shipping_id","{{%order}}");
+//        $this->dropIndex("idx-order-shipping_id","{{%order}}");
+        $this->dropForeignKey("fk-order-store_id","{{%order}}");
+//        $this->dropIndex("idx-order-store_id","{{%order}}");
+        $this->dropForeignKey("fk-delivery-store_id", "{{%delivery}}");
+//        $this->dropIndex("idx-delivery-store_id","{{%delivery}}");
+        $this->dropForeignKey("fk-shipping-store_id","{{%shipping}}");
+//        $this->dropIndex("idx-shipping-store_id","{{%shipping}}");
         $this->dropForeignKey("fk-shipping-delivery_id","{{%shipping}}");
-        $this->dropIndex("idx-shipping-delivery_id","{{%shipping}}");
-        $this->dropForeignKey("idx-shipping-order_id","{{%shipping}}");
-        $this->dropIndex("idx-shipping-order_id", "{{%shipping}}");
-        $this->dropForeignKey("fk-category-product_id", "{{%category}}");
-        $this->dropIndex("idx-category-product_id", "{{%category}}");
-        $this->dropForeignKey("fk-order_product-product_id", "order_product");
-        $this->dropIndex("idx-order-order_product_id", "order_product_id");
-        $this->dropForeignKey("fk-order-order_product_id","order");
-        $this->dropIndex("idx-order_product-product_id", "order_product");
+//        $this->dropIndex("idx-shipping-delivery_id","{{%shipping}}");
+
+
 
 //        echo '2- Dropping tables';
 
@@ -291,6 +317,7 @@ class m171016_015654_init_php_project extends Migration
         $this->dropTable("{{%product}}");
         $this->dropTable("{{%category}}");
         $this->dropTable("{{%delivery}}");
+        $this->dropTable("{{%category_product}}");
 
 //        echo '3- dropping User columns';
 //        $this->dropColumn("{{%user}}","order_id");

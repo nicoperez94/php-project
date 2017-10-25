@@ -14,11 +14,9 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="country-form">
+<div class="product-form">
 
-    <?php $form = ActiveForm::begin([
-//            'type' => ActiveForm::TYPE_HORIZONTAL,
-            'options' => ['enctype'=>'multipart/form-data']]); ?>
+    <?php $form = ActiveForm::begin([ 'options' => ['enctype'=>'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 

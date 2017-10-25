@@ -8,7 +8,7 @@
 
 namespace backend\controllers;
 
-use common\models\Product;
+use common\models\Category;
 use Yii;
 use yii\web\NotFoundHttpException;
 use yii\web\Controller;
@@ -16,19 +16,12 @@ use yii\web\UploadedFile;
 use common\models\ProductSearch;
 
 
-class ProductController extends \yii\web\Controller{
+class CategoryController extends \yii\web\Controller{
 
     public function actionCreate(){
-        $model = new Product();
+        $model = new Category();
         if($model->load(Yii::$app->request->post()) && $model->validate()){
-            if($model->image){
-                $uploadedFile = UploadedFile::getInstance($model, 'image');
-                $model->image = $uploadedFile->name;
-            }
-//            $model->upload();
-
             $model->save();
-            return $this->redirect(['product/index']);
         }else{
             return $this->render('create', ['model' => $model]);
         }
@@ -43,7 +36,7 @@ class ProductController extends \yii\web\Controller{
 
     protected function findModel($id)
     {
-        if (($model = Product::findOne($id)) !== null) {
+        if (($model = Category::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
@@ -52,7 +45,7 @@ class ProductController extends \yii\web\Controller{
 
     public function actionIndex()
     {
-        $searchModel = new ProductSearch();
+        $searchModel = new CategorySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -65,22 +58,11 @@ class ProductController extends \yii\web\Controller{
     {
         //Todo hay que arreglar este metodo que aun no esta funcionando.
         $model = $this->findModel($id);
-//        $model->setScenario('update');
 
         $saveOk = false;
 
         if ($model->load(Yii::$app->request->post())) {
-//            $dirty_attributes = $model->getDirtyAttributes();
-//            if (isset($dirty_attributes['image'])) {
-//                if(\Yii::$app->user->can('updateCountryBandera')) {
-//                    // Update
-//                    $saveOk = $model->save();
-////                } else {
-//                    $model->addError('flag_img', 'No tienes permiso para modificar la flag');
-////                }
-//            } else {
-                $saveOk = $model->save();
-//            }
+            $saveOk = $model->save();
         }
 
         if ($saveOk) {

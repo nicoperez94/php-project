@@ -46,15 +46,15 @@ class ProductSearch extends Product
             return $dataProvider;
         }
 
-        // grid filtering conditions
-        $query->andFilterWhere([
-            'id' => $this->id,
-            'name' => $this->name,
-        ]);
-
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'bar_code', $this->bar_code])
-            ->andFilterWhere(['like', 'image', $this->image]);
+            ->andFilterWhere([ 'id' => $this->id ]);
+//            ->andFilterWhere(['like', 'bar_code', $this->bar_code])
+//            ->andFilterWhere(['like', 'image', $this->image]);
+
+        // grid filtering conditions
+//        $query
+
+
 
         return $dataProvider;
     }
