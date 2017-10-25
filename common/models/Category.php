@@ -11,11 +11,12 @@ namespace common\models;
 class Category extends \yii\db\ActiveRecord{
 
     public static function tableName(){
-        return 'category';
+        return '{{%category}}';
     }
 
-    public function getProducts(){
-        return $this->hasMany(Product::className(), ['user_id'=>'id']);
+    public function getProducts() {
+        return $this->hasMany(Product::className(), ['id' => 'product_id'])
+            ->viaTable('category_product', ['category_id' => 'id']);
     }
 
     public function rules(){

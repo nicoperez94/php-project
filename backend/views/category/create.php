@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Category */
 
-$this->title = 'Create Product';
+$this->title = 'Crear Categoria';
 $this->params['breadcrumbs'][] = ['label' => 'Categoria', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

@@ -13,7 +13,7 @@ use Yii;
 use yii\web\NotFoundHttpException;
 use yii\web\Controller;
 use yii\web\UploadedFile;
-use common\models\ProductSearch;
+use common\models\CategorySearch;
 
 
 class CategoryController extends \yii\web\Controller{
@@ -22,6 +22,7 @@ class CategoryController extends \yii\web\Controller{
         $model = new Category();
         if($model->load(Yii::$app->request->post()) && $model->validate()){
             $model->save();
+            return $this->redirect(['category/index']);
         }else{
             return $this->render('create', ['model' => $model]);
         }

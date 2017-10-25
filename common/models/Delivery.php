@@ -11,7 +11,10 @@ namespace common\models;
 class Delivery extends \yii\db\ActiveRecord{
 
     public static function tableName(){
-        return 'delivery';
+        return '{{%delivery}}';
     }
 
+    public function getShipping() {
+        return $this->hasMany(Shipping::className(), ['delivery_id' => 'id']);
+    }
 }

@@ -6,10 +6,16 @@
  * Time: 11:06 PM
  */
 
+namespace common\models;
+
 class Shipping extends \yii\db\ActiveRecord{
 
     public static function tableName(){
-        return 'shipping';
+        return '{{%shipping}}';
+    }
+
+    public function getOrders() {
+        return $this->hasMany(Order::className(), ['shipping_id' => 'id']);
     }
 
 }

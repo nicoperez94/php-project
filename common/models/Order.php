@@ -11,9 +11,14 @@ namespace common\models;
 class Order extends \yii\db\ActiveRecord{
 
     public static function tableName(){
-        return 'order';
+        return '{{%order}}';
     }
 
+    public function getOrderProduct() {
+        return $this->hasMany(OrderProduct::className(), ['order_id' => 'id']);
+    }
 
-
+    public function getDelivery() {
+        return $this->hasOne(Delivery::className(), ['id' => 'delivery_id']);
+    }
 }
