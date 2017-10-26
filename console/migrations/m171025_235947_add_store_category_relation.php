@@ -8,21 +8,21 @@ class m171025_235947_add_store_category_relation extends Migration
     {
         $this->addColumn(
             "{{%category}}",
-            "order_id",
+            "store_id",
             $this->integer(11)
         );
 
         $this->createIndex(
-            "idx-category-order_id",
+            "idx-category-store_id",
             "{{%category}}",
-            "order_id"
+            "store_id"
         );
 
         $this->addForeignKey(
             "fk-category-store_id",
             "{{%category}}",
-            "order_id",
-            "{{%order}}",
+            "store_id",
+            "{{%store}}",
             "id",
             "CASCADE"
         );
@@ -34,7 +34,7 @@ class m171025_235947_add_store_category_relation extends Migration
     {
         echo "m171025_235947_add_store_category_relation cannot be reverted.\n";
         $this->dropForeignKey("fk-category-store_id", "{{%category}}");
-        $this->dropColumn("{{%category}}", "order_id");
+        $this->dropColumn("{{%category}}", "store_id");
 
     }
 
