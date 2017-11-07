@@ -25,7 +25,7 @@ class RbacController extends Controller
         $auth = Yii::$app->authManager;
 
         // add "createPost" permission
-        $updateBandera = $auth->createPermission('updateCountryBandera');
+        /*$updateBandera = $auth->createPermission('updateCountryBandera');
         $updateBandera->description = 'Permiso para modificar el campo flag_url del modelo country';
         $auth->add($updateBandera);
 
@@ -39,8 +39,20 @@ class RbacController extends Controller
         $admin = $auth->createRole('admin');
         $auth->add($admin);
         $auth->addChild($admin, $updateBandera);
-        $auth->addChild($admin, $author);
+        $auth->addChild($admin, $author);*/
 
+        $gerente = $auth->createRole('gerente');
+       // $auth->add($gerente);
+
+        $despachador = $auth->createRole('despachador');
+        //$auth->add($despachador);
+
+        $cliente = $auth->createRole('cliente');
+//        $auth->add($cliente);
+
+        $auth->assign($gerente, 3);
+        $auth->assign($cliente, 5);
+        $auth->assign($despachador, 4);
         // Assign roles to users. 1 and 2 are IDs returned by IdentityInterface::getId()
         // usually implemented in your User model.
         // $auth->assign($author, 2);

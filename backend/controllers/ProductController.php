@@ -14,9 +14,38 @@ use yii\web\NotFoundHttpException;
 use yii\web\Controller;
 use yii\web\UploadedFile;
 use common\models\ProductSearch;
+use yii\filters\AccessControl;
 
 
 class ProductController extends \yii\web\Controller{
+
+//    public function behaviors()
+//    {
+//        return [
+//            'access' => [
+//                'class' => AccessControl::className(),
+//                'only' => ['create', 'view'],
+//                'rules' => [
+//                    [
+//                        'actions' => ['create'],
+//                        'allow' => true,
+//                        'roles' => ['admin'],
+//                    ],
+//                    [
+//                        'actions' => ['view'],
+//                        'allow' => true,
+//                        'roles' => ['@'],
+//                    ],
+//                ],
+//            ],
+////            'verbs' => [
+////                'class' => VerbFilter::className(),
+////                'actions' => [
+////                    'logout' => ['post'],
+////                ],
+////            ],
+//        ];
+//    }
 
     public function actionCreate(){
         $model = new Product();
@@ -52,6 +81,9 @@ class ProductController extends \yii\web\Controller{
 
     public function actionIndex()
     {
+        if (Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
         $searchModel = new ProductSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 

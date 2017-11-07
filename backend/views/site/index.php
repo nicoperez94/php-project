@@ -2,6 +2,16 @@
 
 /* @var $this yii\web\View */
 
+
+//var_dump(Yii::$app->session);
+//var_dump(Yii::$app->user->identity->id);
+//
+//$roles = Yii::$app->authManager->getRolesByUser(5);
+//foreach ($roles as $rol){
+//    var_dump($rol->name);
+//}
+
+
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">

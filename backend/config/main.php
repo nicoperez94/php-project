@@ -17,6 +17,18 @@ return [
             'csrfParam' => '_csrf-backend',
 
         ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+//            'viewPath' => '@common\mail',
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.gmail.com',
+                'username' => 'nicoperez2294@gmail.com',
+                'password' => 'DontWorryBeHappy22',
+                'port' => '587',
+                'encryption' => 'tls'
+            ]
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,

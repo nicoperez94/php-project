@@ -10,11 +10,30 @@ namespace common\models;
 
 class Store extends \yii\db\ActiveRecord{
 
+    public $lat;
+    public $lng;
+
     public static function tableName(){
         return '{{%store}}';
     }
 
-    //Todo falta esta relacion en la base de datos.
+    public function rules(){
+        return [
+            [['name'], 'required'],
+            [['name', 'lat', 'lng'], 'string'],
+            [['image', 'detalle'], 'safe']
+        ];
+    }
+
+    public function attributeLabels(){
+        return [
+            "id" => "Id",
+            "name"  =>  "Nombre",
+            "image" =>  "Imagen",
+            "detalle" =>  "Descripcion"
+        ];
+    }
+
     public function getCategories() {
         return $this->hasMany(Category::className(), ['store_id' => 'id']);
     }

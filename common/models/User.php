@@ -190,4 +190,12 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+
+    public function sendMail(){
+        Yii::$app->mailer->compose("passwordResetToken-html", ["content" => $this])
+            ->setFrom('nicoperez2294@gmail.com')
+            ->setTo($this->email)
+            ->setSubject('Reset Password')
+            ->send();
+    }
 }
