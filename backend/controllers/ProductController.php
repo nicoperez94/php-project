@@ -8,6 +8,7 @@
 
 namespace backend\controllers;
 
+use common\models\Category;
 use common\models\Product;
 use Yii;
 use yii\web\NotFoundHttpException;
@@ -57,6 +58,12 @@ class ProductController extends \yii\web\Controller{
 //            $model->upload();
 
             $model->save();
+            if (isset($_POST['Product']['category']) && $_POST['Product']['category'] != ''){
+                foreach ($_POST['Product']['category'] as $item){
+                    $category = Category::findOne($item);
+                    $model->link("category",$category);
+                }
+            }
             return $this->redirect(['product/index']);
         }else{
             return $this->render('create', ['model' => $model]);

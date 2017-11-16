@@ -8,6 +8,7 @@
 
 namespace common\models;
 
+use yii\helpers\ArrayHelper;
 use yii\web\UploadedFile;
 use Yii;
 
@@ -20,6 +21,15 @@ class Product extends \yii\db\ActiveRecord{
     public function getCategory() {
         return $this->hasMany(Category::className(), ['id' => 'category_id'])
             ->viaTable('category_product', ['product_id' => 'id']);
+    }
+
+    public function getCategoryDropdown()
+    {
+        $listCategory   = Category::find()->select('id,name')
+            ->all();
+        $list   = ArrayHelper::map( $listCategory,'id','name');
+
+        return $list;
     }
 
     public function rules(){
